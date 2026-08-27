@@ -42,3 +42,14 @@
 /config/credentials/*.key
 .DS_Store
 config/deploy.yml
+config/deploy.yml
+.kamal/secrets
+.kamal/hooks/pre-proxy-reboot.sample
+.kamal/hooks/pre-deploy.sample
+.kamal/hooks/pre-connect.sample
+.kamal/hooks/pre-build.sample
+.kamal/hooks/pre-app-boot.sample
+.kamal/hooks/post-proxy-reboot.sample
+.kamal/hooks/post-deploy.sample
+.kamal/hooks/post-app-boot.sample
+.kamal/hooks/docker-setup.sample
