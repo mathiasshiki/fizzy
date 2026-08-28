@@ -65,7 +65,7 @@ class Card < ApplicationRecord
   end
 
   def filled?
-    title.present? || description.present?
+    title.present? || description.present? || deadline.present?
   end
 
   private

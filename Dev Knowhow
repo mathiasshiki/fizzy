@@ -1,5 +1,6 @@
 When adding a paramater for a Card, don't forget to update the following files:
     app/models/card.rb
+    app/controllers/cards_controller.rb
 
     app/helpers/html_helper.rb (Based on need)
     
