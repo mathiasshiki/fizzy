@@ -53,3 +53,4 @@ config/deploy.yml
 .kamal/hooks/post-deploy.sample
 .kamal/hooks/post-app-boot.sample
 .kamal/hooks/docker-setup.sample
+rvm-install
