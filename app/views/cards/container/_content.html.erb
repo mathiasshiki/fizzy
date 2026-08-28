@@ -18,11 +18,13 @@
       <% end %>
     </h1>
 
+    <%= form.date_field :deadline %>
+
     <%= form.rich_textarea :description, class: "card__description lexxy-content",
           placeholder: "Add some notes, context, pictures, or video about this…",
           data: { action: "lexxy:change->auto-save#change focusout->auto-save#submit" } do %>
       <%= general_prompts(card.board) %>
     <% end %>
-    <%= form.date_field :deadline %>
+    
   <% end %>
 <% end %>
