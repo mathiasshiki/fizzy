@@ -5,11 +5,6 @@
 <% unless card.description.blank? %>
   <div class="card__description lexxy-content" data-controller="syntax-highlight retarget-links">
     <%= card.description %>
-  </div>
-<% end %>
-
-<% unless card.deadline.blank? %>
-  <div class="card__deadline lexxy-content" data-controller="syntax-highlight retarget-links">
-    <%= card.deadline %>
+    
   </div>
 <% end %>
