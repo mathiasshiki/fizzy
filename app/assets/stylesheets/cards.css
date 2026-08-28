@@ -256,6 +256,12 @@
     }
   }
 
+  .card__deadline {
+    action-text-content p:only-child:has(br:only-child){
+      display: none;
+    }
+  }
+
   .card__stages {
     color: var(--card-text-color);
     display: flex;
