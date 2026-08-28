@@ -1,0 +1,11 @@
+When adding a paramater for a Card, don't forget to update the following files:
+    app/models/card.rb
+
+    app/helpers/html_helper.rb (Based on need)
+    
+    db/schema.rb
+    db/schema_sqlite.rb
+
+    After the schema has been updated, you need to do bin/setup --reset to reset the database and add the new data.
+
+    
