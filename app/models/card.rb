@@ -13,6 +13,7 @@ class Card < ApplicationRecord
   has_rich_text :description
 
   before_save :set_default_title, if: :published?
+  before_save :set_deadline, if: :published?
   before_create :assign_number
 
   after_save   -> { board.touch }, if: :published?
@@ -91,5 +92,9 @@ class Card < ApplicationRecord
 
     def assign_number
       self.number ||= account.with_lock { account.increment!(:cards_count).cards_count }
+    end
+
+    def set_deadline
+      self.deadline = "2026-12-24 16:00" if deadline.blank?
     end
 end

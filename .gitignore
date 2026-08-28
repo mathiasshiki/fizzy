@@ -56,3 +56,4 @@ config/deploy.yml
 rvm-install
 config/puma.rb
 config/puma.rb
+config.ru
