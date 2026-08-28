@@ -55,3 +55,4 @@ config/deploy.yml
 .kamal/hooks/docker-setup.sample
 rvm-install
 config/puma.rb
+config/puma.rb
