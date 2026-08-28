@@ -23,5 +23,6 @@
           data: { action: "lexxy:change->auto-save#change focusout->auto-save#submit" } do %>
       <%= general_prompts(card.board) %>
     <% end %>
+    <%= form.date_field :deadline %>
   <% end %>
 <% end %>
