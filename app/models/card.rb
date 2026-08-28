@@ -13,7 +13,7 @@ class Card < ApplicationRecord
   has_rich_text :description
 
   before_save :set_default_title, if: :published?
-  before_save :set_deadline, if: :published?
+  before_create :set_deadline
   before_create :assign_number
 
   after_save   -> { board.touch }, if: :published?
