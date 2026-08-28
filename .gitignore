@@ -54,3 +54,4 @@ config/deploy.yml
 .kamal/hooks/post-app-boot.sample
 .kamal/hooks/docker-setup.sample
 rvm-install
+config/puma.rb
