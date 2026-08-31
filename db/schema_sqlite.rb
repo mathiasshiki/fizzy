@@ -227,6 +227,7 @@ ActiveRecord::Schema[8.2].define(version: 2026_08_28_120000) do
     t.string "status", limit: 255, default: "drafted", null: false
     t.string "title", limit: 255
     t.string "deadline", limit: 255
+    t.string "client", limit: 255
     t.datetime "updated_at", null: false
     t.index ["account_id", "board_id", "status"], name: "index_cards_on_account_id_and_board_id_and_status"
     t.index ["account_id", "last_active_at", "status"], name: "index_cards_on_account_id_and_last_active_at_and_status"

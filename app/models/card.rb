@@ -14,6 +14,7 @@ class Card < ApplicationRecord
 
   before_save :set_default_title, if: :published?
   before_save :set_deadline, if: :published?
+  before_save :set_client, if: :published?
   before_create :assign_number
 
   after_save   -> { board.touch }, if: :published?
@@ -96,5 +97,9 @@ class Card < ApplicationRecord
 
     def set_deadline
       self.deadline = "2026-12-24 16:00" if deadline.blank?
+    end
+
+    def set_client
+      self.client = "" if client.blank?
     end
 end

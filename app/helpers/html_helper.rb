@@ -14,4 +14,10 @@ module HtmlHelper
 
     ERB::Util.html_escape(card.deadline).gsub(/`([^`]+)`/, '<code>\1</code>').html_safe
   end
+
+  def card_html_client(card)
+    return card.client if card.client.blank?
+
+    ERB::Util.html_escape(card.client).gsub(/`([^`]+)`/, '<code>\1</code>').html_safe
+  end
 end

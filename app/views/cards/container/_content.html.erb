@@ -18,7 +18,8 @@
       <% end %>
     </h1>
 
-    <%= form.date_field :deadline %>
+    <%= form.date_field :deadline, class: "card__deadline" %>
+    <%= form.text_field :client, class:"card__client", placeholder: "Client.." %>
 
     <%= form.rich_textarea :description, class: "card__description lexxy-content",
           placeholder: "Add some notes, context, pictures, or video about this…",

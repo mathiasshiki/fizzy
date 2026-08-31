@@ -41,6 +41,9 @@
         <h3 class="card__deadline overflow-line-clamp">
           Deadline - <%= card_html_deadline(card) %>
           </h3>
+          <h3>
+          Client - <%= card_html_client(card) %>
+          </h3>
       </div>
 
       <%= render "cards/display/preview/columns", card: card %>
