@@ -37,8 +37,10 @@
       <div class="card__content">
         <h3 class="card__title overflow-line-clamp">
           <%= card_html_title(card) %>
-          sadface
         </h3>
+        <h3 class="overflow-line-clamp">
+          Deadline - <%= card_html_deadline(card) %>
+          </h3>
       </div>
 
       <%= render "cards/display/preview/columns", card: card %>
