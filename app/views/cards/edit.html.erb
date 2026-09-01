@@ -26,7 +26,8 @@
     
     <%= form.date_field :deadline, class: "card__deadline" %>
 
-    <%= form.text_field :client, class:"card__client", placeholder: "Client.." %>
+    <%= form.text_field :client, class:"card__client", list: form.field_id(:client, :datalist) %>
+    <%= form.datalist :client, card_client_list() %>
 
 
     <%= link_to "Close editor and discard changes", @card,

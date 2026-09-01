@@ -20,4 +20,8 @@ module HtmlHelper
 
     ERB::Util.html_escape(card.client).gsub(/`([^`]+)`/, '<code>\1</code>').html_safe
   end
+
+  def card_client_list()
+    return Card.distinct.pluck(:client).reject(&:blank?)
+  end
 end
